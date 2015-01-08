@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/CodeFont"
+    android:layout_gravity="center" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100sp"
+        android:src="@drawable/icon" />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="e-Pemuda Jateng"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:textColor="#ffffff"
+	    android:textStyle="bold"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="25dp" />
+	
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Jl. Pemuda No. 142 Semarang"
+	    android:textColor="#ffffff"
+	    android:layout_gravity="center_horizontal"
+	     />
+	
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Telp. (021)555723"
+	    android:textColor="#ffffff"
+	    android:layout_gravity="center_horizontal"
+	     />
+	
+</LinearLayout>

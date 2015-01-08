@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    style="@style/CodeFont">
+    
+    <ImageView
+   		android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:src="@drawable/icon" 
+        android:paddingTop="60sp"
+    	android:paddingBottom="185sp"/>
+    
+    <ScrollView
+     	android:id="@+id/ScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    	
+    	<LinearLayout
+    	    android:id="@+id/LinearLayouts"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical" >
+
+    		<Button
+       			android:id="@+id/LihatSemuaToko"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="Lihat Semua Toko" 
+        		android:clickable="true"
+        		/>
+    		
+    		<Button
+       			android:id="@+id/Keranjang"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="12sp"
+        		android:text="Keranjang Belanja"
+        		android:clickable="true" 
+        		/>
+    		
+    		<Button
+        		android:id="@+id/TentangKami"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="12sp"
+        		android:text="Tentang Kami"
+        		android:clickable="true" 
+        		/>
+
+    		<Button
+        		android:id="@+id/Keluar"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="12sp"
+        		android:layout_marginBottom="30sp"
+        		android:text="Keluar" 
+        		android:clickable="true"
+        		/>
+	
+		</LinearLayout>    
+	</ScrollView>
+</LinearLayout>

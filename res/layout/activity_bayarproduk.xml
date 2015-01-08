@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    android:paddingTop="20sp"
+    style="@style/CodeFont">
+    
+    <LinearLayout 
+        android:id="@+id/LinearLayout1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical">
+
+		<ImageView
+		    android:id="@+id/gambarbp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="250sp"
+		    android:layout_marginTop="30sp"
+		    android:src="@drawable/temp_img" />
+		
+		<TextView android:id="@+id/atasbp" 
+    		android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#ffffff"
+    		android:layout_marginTop="30sp"
+    		style="@style/styleku">
+		</TextView>
+		
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Harga:"
+		    android:textColor="#ffffff"
+		    android:layout_marginTop="15sp"
+		    android:textStyle="bold">
+		</TextView>
+
+		<EditText
+		    android:id="@+id/hargabp"
+		    android:layout_width="286dp"
+		    android:layout_height="wrap_content"
+		    android:editable="false"
+		    android:textColor="#000000" >
+
+		</EditText>
+        
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Stok Barang:"
+		    android:textStyle="bold"
+		    android:textColor="#ffffff"
+		    android:layout_marginTop="15sp">
+		</TextView>
+		<EditText android:id="@+id/stokbp" 
+    		android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		android:editable="false">
+		</EditText>
+		 
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Jumlah Beli:"
+		    android:textStyle="bold"
+		    android:textColor="#ffffff"
+		    android:layout_marginTop="15sp">
+		</TextView>
+		<EditText android:id="@+id/jumlahbeli" 
+    		android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		android:inputType="number">
+		</EditText>
+		 
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Lokasi Pembeli:"
+		    android:textStyle="bold"
+		    android:textColor="#ffffff"
+		    android:layout_marginTop="15sp">
+		</TextView>
+		<Spinner android:id="@+id/spinner1"
+		    android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#ffffff"/>
+
+		
+		<Button
+       		android:id="@+id/cektotalbayar"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Cek Total Pembayaran" 
+        	android:layout_marginTop="15sp"
+        	android:layout_marginBottom="15sp"
+        	/>
+		
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Total Bayar:"
+		    android:textStyle="bold"
+		    android:textColor="#ffffff"
+		    android:layout_marginTop="15sp">
+		</TextView>
+		<EditText android:id="@+id/totalbayar" 
+    		android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		android:editable="false">
+		</EditText>
+		
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Alamat Pengiriman:"
+		    android:textStyle="bold"
+		    android:textColor="#ffffff"
+		    android:layout_marginTop="25sp">
+		</TextView>
+		<EditText android:id="@+id/alamat" 
+    		android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000">
+		</EditText>
+		
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Nomer Rekening Pembeli:"
+		    android:textStyle="bold"
+		    android:textColor="#ffffff"
+		    android:layout_marginTop="15sp">
+		</TextView>		
+		<EditText android:id="@+id/notransfer" 
+    		android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		android:inputType="number">
+		</EditText>
+		
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Tujuan Transfer:"
+		    android:textStyle="bold"
+		    android:textColor="#ffffff"
+		    android:layout_marginTop="15sp">
+		</TextView>		
+		<EditText android:id="@+id/tujuan" 
+    		android:layout_width="match_parent" 
+    		android:layout_height="wrap_content"
+    		android:textColor="#000000"
+    		android:editable="false">
+		</EditText>
+		
+		<Button
+       		android:id="@+id/bayar"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Bayar Sekarang" 
+        	android:layout_marginBottom="50sp"
+        	/>
+   
+		</LinearLayout>    
+
+</ScrollView>

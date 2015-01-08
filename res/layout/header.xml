@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/menubar" >
+
+    <LinearLayout android:id="@+id/panelIconLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="9dip" >
+        <Button android:id="@+id/btnHome"
+            android:layout_width="58dip"
+            android:layout_height="30dip"
+            android:background="@drawable/btn_home"
+            android:onClick="btnHomeClick"
+            android:text="Beranda"
+            android:paddingLeft="5dip"
+            android:textColor="#FFF"
+            android:typeface="serif"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/txtHeading"
+        style="@style/heading_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/panelIconRight"
+        android:layout_toRightOf="@id/panelIconLeft"
+        android:layout_marginTop="7dip"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="Beranda"
+        android:typeface="serif"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout android:id="@+id/panelIconRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dip"  
+        android:layout_marginTop="9dip" > 
+		<Button android:id="@+id/btnFeedback"
+            android:layout_width="58dip"
+            android:layout_height="30dip"
+            android:background="@drawable/btn_logout"
+            android:onClick="btnFeedbackClick"
+            android:text="Keluar"
+            android:textColor="#FFF"
+            android:typeface="serif"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
